@@ -9,10 +9,10 @@ import jakarta.persistence.Id;
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idClient;
+    private Long id_client;
     private String nom;
     private String email;
-    private String motDePasse;
+    private String mot_de_passe;
     private String telephone;
     private String adresse;
 
@@ -23,10 +23,10 @@ public class Client {
         return email;
     }
     public Long getIdClient() {
-        return idClient;
+        return id_client;
     }
     public String getMotDePasse() {
-        return motDePasse;
+        return mot_de_passe;
     }
     public String getNom() {
         return nom;
@@ -40,11 +40,11 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
-    public void setIdClient(Long idClient) {
-        this.idClient = idClient;
+    public void setIdClient(Long id_client) {
+        this.id_client = id_client;
     }
-    public void setMotDePasse(String motDePasse) {
-        this.motDePasse = motDePasse;
+    public void setMotDePasse(String mot_de_passe) {
+        this.mot_de_passe = mot_de_passe;
     }
     public void setNom(String nom) {
         this.nom = nom;

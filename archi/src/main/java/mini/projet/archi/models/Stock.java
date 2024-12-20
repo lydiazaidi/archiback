@@ -10,20 +10,20 @@ import jakarta.persistence.Id;
 public class Stock {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idStock;
+    private Long id_stock;
     private Integer quantite;
 
-    public void setIdStock(Long idStock) {
-        this.idStock = idStock;
+    public void setIdStock(Long id_stock) {
+        this.id_stock = id_stock;
     }
     public void setQuantite(Integer quantite) {
         this.quantite = quantite;
     }
     public Long getIdStock() {
-        return idStock;
+        return id_stock;
     }
     public Integer getQuantite() {
         return quantite;
     }
-    
+
 }

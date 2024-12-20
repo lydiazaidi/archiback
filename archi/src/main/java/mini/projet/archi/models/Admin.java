@@ -1,22 +1,24 @@
 package mini.projet.archi.models;
 import jakarta.persistence.*;
-import java.util.Date;
+import mini.projet.archi.enumeration.Role;
+
+
 
 @Entity
 public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAdmin;
+    private Long id_admin;
     private String nom;
-    private String motDePasse;
+    private String mot_de_passe;
 
     @Enumerated(EnumType.STRING)
     private Role role;
-    public void setIdAdmin(Long idAdmin) {
-        this.idAdmin = idAdmin;
+    public void setIdAdmin(Long id_admin) {
+        this.id_admin = id_admin;
     }
-    public void setMotDePasse(String motDePasse) {
-        this.motDePasse = motDePasse;
+    public void setMotDePasse(String mot_de_passe) {
+        this.mot_de_passe = mot_de_passe;
     }
     public void setNom(String nom) {
         this.nom = nom;
@@ -25,10 +27,10 @@ public class Admin {
         this.role = role;
     }
     public Long getIdAdmin() {
-        return idAdmin;
+        return id_admin;
     }
     public String getMotDePasse() {
-        return motDePasse;
+        return mot_de_passe;
     }
     public String getNom() {
         return nom;
